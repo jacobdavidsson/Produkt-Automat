@@ -18,6 +18,30 @@
             wearables.Add(new Wearables("Nike Keps", "Svart keps med märket Nike", 299));
             wearables.Add(new Wearables("Armbandsur", "Sportklocka från Adidas", 499));
             wearables.Add(new Wearables("Svettband", "Träningsband för att ta bort svetten från pannan", 99));
+
+            Console.WriteLine("------------Meny-------------");
+            Console.WriteLine("=============================");
+            foreach (Food i in foods) 
+            {
+                Console.Write(i.Name);
+                Console.Write(" ");
+                Console.WriteLine("{0}:-", i.Cost);
+            }
+            Console.WriteLine("=============================");
+            foreach (Drinks i in drinks)
+            {
+                Console.Write(i.Name);
+                Console.Write(" ");
+                Console.WriteLine("{0}:-", i.Cost);
+            }
+            Console.WriteLine("=============================");
+            foreach (Wearables i in wearables)
+            {
+                Console.Write(i.Name);
+                Console.Write(" ");
+                Console.WriteLine("{0}:-", i.Cost);
+            }
+            Console.WriteLine("=============================");
         }
     }
 }
