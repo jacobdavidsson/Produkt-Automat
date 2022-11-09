@@ -21,27 +21,34 @@
 
             Console.WriteLine("------------Meny-------------");
             Console.WriteLine("=============================");
+
+            int count = 0;
             foreach (Food i in foods) 
             {
-                Console.Write(i.Name);
-                Console.Write(" ");
-                Console.WriteLine("{0}:-", i.Cost);
+                count++;
+                Console.Write("{0}. {1}", count, i.Name);
+                Console.WriteLine(" {0}:-", i.Cost);
             }
             Console.WriteLine("=============================");
             foreach (Drinks i in drinks)
             {
-                Console.Write(i.Name);
+                count++;
+                Console.Write("{0}. {1}", count, i.Name);
                 Console.Write(" ");
                 Console.WriteLine("{0}:-", i.Cost);
             }
             Console.WriteLine("=============================");
             foreach (Wearables i in wearables)
             {
-                Console.Write(i.Name);
+                count++;
+                Console.Write("{0}. {1}", count, i.Name);
                 Console.Write(" ");
                 Console.WriteLine("{0}:-", i.Cost);
             }
+
+            count++;
             Console.WriteLine("=============================");
+            Console.WriteLine("{0}. Avsluta", count);
         }
     }
 }

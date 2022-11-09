@@ -26,10 +26,5 @@ namespace Produkt_Automat
         {
             throw new NotImplementedException();
         }
-
-        public void Drink()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
