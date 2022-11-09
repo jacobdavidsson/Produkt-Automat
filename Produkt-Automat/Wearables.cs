@@ -14,17 +14,17 @@ namespace Produkt_Automat
 
         public void Buy()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Du köpte {0} för {1} kronor", this.Name, this.Cost);
         }
 
         public void Description()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(this.Desc);
         }
 
         public void Use()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Du tog på dig {0}", this.Name);
         }
     }
 }
